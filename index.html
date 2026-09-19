@@ -1,353 +1,348 @@
 <!doctype html>
 <html lang="zh-TW">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>祭祖注意事項</title>
     <style>
-        /* 瀏覽器閱讀模式淺牛皮紙色調調色盤 */
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Microsoft JhengHei", sans-serif;
-            line-height: 1.6;
-            color: #3d2f23;
-            /* 深褐字體，比純黑更溫和 */
-            background-color: #f4edd2;
-            /* 經典淺牛皮紙/羊皮紙護眼色 */
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
+      /* 瀏覽器閱讀模式淺牛皮紙色調調色盤 */
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Microsoft JhengHei", sans-serif;
+        line-height: 1.6;
+        color: #3d2f23;
+        /* 深褐字體，比純黑更溫和 */
+        background-color: #f4edd2;
+        /* 經典淺牛皮紙/羊皮紙護眼色 */
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
 
-        .container {
-            background-color: #fdfaf2;
-            /* 微白牛皮紙，襯托內容 */
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(61, 47, 35, 0.08);
-            border: 1px solid #e6dcbc;
-        }
+      .container {
+        background-color: #fdfaf2;
+        /* 微白牛皮紙，襯托內容 */
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(61, 47, 35, 0.08);
+        border: 1px solid #e6dcbc;
+      }
 
-        h1 {
-            color: #801a00;
-            text-align: center;
-            border-bottom: 3px double #801a00;
-            padding-bottom: 12px;
-            margin-top: 10px;
-            line-height: 1.4;
-        }
+      h1 {
+        color: #801a00;
+        text-align: center;
+        border-bottom: 3px double #801a00;
+        padding-bottom: 12px;
+        margin-top: 10px;
+        line-height: 1.4;
+      }
 
-        h2 {
-            color: #b33600;
-            /* 暖磚紅 */
-            border-left: 5px solid #b33600;
-            padding-left: 10px;
-            margin-top: 35px;
-        }
+      h2 {
+        color: #b33600;
+        /* 暖磚紅 */
+        border-left: 5px solid #b33600;
+        padding-left: 10px;
+        margin-top: 35px;
+      }
 
-        h3 {
-            color: #594333;
-            margin-top: 20px;
-            border-bottom: 1px dashed #d1c4a5;
-            padding-bottom: 5px;
-        }
+      h3 {
+        color: #594333;
+        margin-top: 20px;
+        border-bottom: 1px dashed #d1c4a5;
+        padding-bottom: 5px;
+      }
 
-        /* 目錄導覽樣式 */
-        .toc-box {
-            background-color: #f7f0da;
-            border: 1px solid #dcd1b4;
-            border-radius: 8px;
-            padding: 15px 20px;
-            margin: 20px 0;
-        }
+      /* 目錄導覽樣式 */
+      .toc-box {
+        background-color: #f7f0da;
+        border: 1px solid #dcd1b4;
+        border-radius: 8px;
+        padding: 15px 20px;
+        margin: 20px 0;
+      }
 
-        .toc-box font {
-            font-weight: bold;
-            color: #801a00;
-            display: block;
-            margin-bottom: 12px;
-        }
+      .toc-box font {
+        font-weight: bold;
+        color: #801a00;
+        display: block;
+        margin-bottom: 12px;
+      }
 
+      .toc-list {
+        list-style-type: none;
+        padding-left: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2px;
+      }
+
+      @media (max-width: 600px) {
         .toc-list {
-            list-style-type: none;
-            padding-left: 0;
-            margin: 0;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2px;
+          grid-template-columns: 1fr;
         }
+      }
 
-        @media (max-width: 600px) {
-            .toc-list {
-                grid-template-columns: 1fr;
-            }
-        }
+      .toc-list a {
+        color: #3d2f23;
+        text-decoration: none;
+        font-weight: 500;
+      }
 
-        .toc-list a {
-            color: #3d2f23;
-            text-decoration: none;
-            font-weight: 500;
-        }
+      .toc-list a:hover {
+        text-decoration: underline;
+      }
 
-        .toc-list a:hover {
-            text-decoration: underline;
-        }
+      /* 供桌圖表樣式 */
+      .svg-container {
+        text-align: center;
+        background-color: #fbf6e9;
+        padding: 15px;
+        border-radius: 8px;
+        border: 1px solid #e1d5b5;
+        margin: 20px 0;
+      }
 
-        /* 供桌圖表樣式 */
-        .svg-container {
-            text-align: center;
-            background-color: #fbf6e9;
-            padding: 15px;
-            border-radius: 8px;
-            border: 1px solid #e1d5b5;
-            margin: 20px 0;
-        }
+      /* 內容卡片樣式 */
+      .step-box {
+        background-color: #faf5e6;
+        border: 1px solid #e1d5b5;
+        padding: 15px 20px;
+        border-radius: 8px;
+        margin-bottom: 15px;
+      }
 
-        /* 內容卡片樣式 */
-        .step-box {
-            background-color: #faf5e6;
-            border: 1px solid #e1d5b5;
-            padding: 15px 20px;
-            border-radius: 8px;
-            margin-bottom: 15px;
-        }
+      .highlight {
+        font-weight: bold;
+        color: #b33600;
+      }
 
-        .highlight {
-            font-weight: bold;
-            color: #b33600;
-        }
+      .quote {
+        background-color: #eeddbb;
+        /* 略深色牛皮紙，突出口訣 */
+        border-left: 5px solid #b33600;
+        padding: 12px 18px;
+        margin: 12px 0;
+        font-size: 1.05em;
+        letter-spacing: 0.5px;
+        border-radius: 0 8px 8px 0;
+      }
 
-        .quote {
-            background-color: #eeddbb;
-            /* 略深色牛皮紙，突出口訣 */
-            border-left: 5px solid #b33600;
-            padding: 12px 18px;
-            margin: 12px 0;
-            font-size: 1.05em;
-            letter-spacing: 0.5px;
-            border-radius: 0 8px 8px 0;
-        }
+      ul {
+        padding-left: 20px;
+      }
 
-        ul {
-            padding-left: 20px;
-        }
+      li {
+        margin-bottom: 8px;
+      }
 
-        li {
-            margin-bottom: 8px;
-        }
-
-        .footer {
-            text-align: center;
-            margin-top: 40px;
-            font-size: 0.95em;
-            color: #735d4c;
-            border-top: 1px dashed #d1c4a5;
-            padding-top: 20px;
-        }
+      .footer {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 0.95em;
+        color: #735d4c;
+        border-top: 1px dashed #d1c4a5;
+        padding-top: 20px;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <h1>祭祖注意事項</h1>
+      <h1>祭祖注意事項</h1>
 
-        <!-- 快速導覽目錄 -->
-        <div class="toc-box">
-            <font>↓ 點擊可看該段落</font>
-            <ul class="toc-list">
-                <li><a href="#section1">一、 守護神地藏王菩薩法相</a></li>
-                <li><a href="#section2">二、 供桌擺放示意圖</a></li>
-                <li><a href="#section3">三、 供品類型與數量</a></li>
-                <li><a href="#section4">四、 祭拜流程與對話口訣</a></li>
-                <li><a href="#section5">五、 現場擲筊確認</a></li>
-                <li><a href="#section6">六、 櫃位探望</a></li>
-                <li><a href="#section7">七、 回程注意事項</a></li>
-            </ul>
-        </div>
-
-        <!-- 一、 守護神 -->
-        <h2 id="section1">一、 納骨塔守護神：地藏王菩薩</h2>
-        <p>在納骨塔各樓層大廳看到的主神，通常就是 <span class="highlight">地藏王菩薩</span>。其經典法相特徵如下：</p>
-        <ul>
-            <li><strong>有帽子：</strong>頭戴「五方佛帽」（毘盧帽），看起來像是有五個葉片形狀的寶冠。</li>
-            <li><strong>手上拿著棍子：</strong>祂手上拿的是「錫杖」，這是一根有環的大手杖，象徵震開地獄之門、救度一切眾生。</li>
-            <li><strong>穿白色的：</strong>部分現代納骨塔法相會身穿白衣，象徵無垢、清淨與大悲（亦稱白衣地藏）。</li>
+      <!-- 快速導覽目錄 -->
+      <div class="toc-box">
+        <font>↓ 點擊可看該段落</font>
+        <ul class="toc-list">
+          <li><a href="#section1">一、 守護神地藏王菩薩法相</a></li>
+          <li><a href="#section2">二、 供桌擺放示意圖</a></li>
+          <li><a href="#section3">三、 供品類型與數量</a></li>
+          <li><a href="#section4">四、 祭拜流程與對話口訣</a></li>
+          <li><a href="#section5">五、 現場擲筊確認</a></li>
+          <li><a href="#section6">六、 櫃位探望</a></li>
+          <li><a href="#section7">七、 回程注意事項</a></li>
         </ul>
+      </div>
 
-        <!-- 二、 供桌擺放與示意圖 -->
-        <h2 id="section2">二、 供桌擺放黃金比例（以人的視角，由近到遠）</h2>
-        <p>無論是地藏王菩薩的供桌，或者是只有香爐的祖先桌，請遵循<strong>「神明 / 祖先最大，香爐最前」</strong>的原則，絕對不要擅自移動香爐。以下是擺放的視覺透視圖：</p>
+      <!-- 一、 守護神 -->
+      <h2 id="section1">一、 納骨塔守護神：地藏王菩薩</h2>
+      <p>在納骨塔各樓層大廳看到的主神，通常就是 <span class="highlight">地藏王菩薩</span>。其經典法相特徵如下：</p>
+      <ul>
+        <li><strong>有帽子：</strong>頭戴「五方佛帽」（毘盧帽），看起來像是有五個葉片形狀的寶冠。</li>
+        <li><strong>手上拿著棍子：</strong>祂手上拿的是「錫杖」，這是一根有環的大手杖，象徵震開地獄之門、救度一切眾生。</li>
+        <li><strong>穿白色的：</strong>部分現代納骨塔法相會身穿白衣，象徵無垢、清淨與大悲（亦稱白衣地藏）。</li>
+      </ul>
 
-        <!-- SVG 供桌擺放示意圖 -->
-        <div class="svg-container">
-            <p style="font-weight: bold; margin-top: 0; color: #801a00">【供桌空間配置透視圖】</p>
-            <svg xmlns="http://w3.org" viewBox="0 0 500 500" width="100%" height="auto">
-                <!-- 背景牆與神明端 -->
-                <rect x="15" y="15" width="470" height="60" fill="#e6dcbc" rx="8" />
-                <text x="250" y="52" font-family="sans-serif" font-size="22" font-weight="bold" fill="#801a00"
-                    text-anchor="middle">【 最內側：神明尊位 / 祖先牌位 】</text>
+      <!-- 二、 供桌擺放與示意圖 -->
+      <h2 id="section2">二、 供桌擺放黃金比例（以人的視角，由近到遠）</h2>
+      <p>無論是地藏王菩薩的供桌，或者是只有香爐的祖先桌，請遵循<strong>「神明 / 祖先最大，香爐最前」</strong>的原則，絕對不要擅自移動香爐。以下是擺放的視覺透視圖：</p>
 
-                <!-- 供桌主體 (縱深拉長至 420) -->
-                <polygon points="40,95 460,95 485,420 15,420" fill="#dfd3b3" stroke="#b33600" stroke-width="3" />
+      <!-- SVG 供桌擺放示意圖 -->
+      <div class="svg-container">
+        <p style="font-weight: bold; margin-top: 0; color: #801a00">【供桌空間配置透視圖】</p>
+        <svg xmlns="http://w3.org" viewBox="0 0 500 500" width="100%" height="auto">
+          <!-- 背景牆與神明端 -->
+          <rect x="15" y="15" width="470" height="60" fill="#e6dcbc" rx="8" />
+          <text x="250" y="52" font-family="sans-serif" font-size="22" font-weight="bold" fill="#801a00" text-anchor="middle">【 最內側：神明尊位 / 祖先牌位 】</text>
 
-                <!-- 第 3 層：香爐 (位置下移，尺寸放大) -->
-                <ellipse cx="250" cy="148" rx="55" ry="22" fill="#a67c52" stroke="#594333" stroke-width="3" />
-                <text x="250" y="157" font-family="sans-serif" font-size="26" font-weight="bold" fill="#ffffff"
-                    text-anchor="middle">香爐</text>
-                <!-- 煙霧線條 (拉長加大) -->
-                <path d="M235,120 Q225,100 240,80 T235,60" fill="none" stroke="#b3aa94" stroke-width="2"
-                    stroke-dasharray="3,3" />
-                <path d="M265,120 Q275,100 260,80 T265,60" fill="none" stroke="#b3aa94" stroke-width="2"
-                    stroke-dasharray="3,3" />
+          <!-- 供桌主體 (縱深拉長至 420) -->
+          <polygon points="40,95 460,95 485,420 15,420" fill="#dfd3b3" stroke="#b33600" stroke-width="3" />
 
-                <!-- 第 2 層：金紙 (寬度與字體放大) -->
-                <rect x="60" y="194" width="90" height="50" fill="#f2cb61" stroke="#cc9900" stroke-width="1.5" rx="5" />
-                <rect x="350" y="194" width="90" height="50" fill="#f2cb61" stroke="#cc9900" stroke-width="1.5"
-                    rx="5" />
-                <text x="105" y="228" font-family="sans-serif" font-size="26" font-weight="bold" fill="#3d2f23"
-                    text-anchor="middle">金紙</text>
-                <text x="395" y="228" font-family="sans-serif" font-size="26" font-weight="bold" fill="#3d2f23"
-                    text-anchor="middle">金紙</text>
+          <!-- 第 3 層：香爐 (位置下移，尺寸放大) -->
+          <ellipse cx="250" cy="148" rx="55" ry="22" fill="#a67c52" stroke="#594333" stroke-width="3" />
+          <text x="250" y="157" font-family="sans-serif" font-size="26" font-weight="bold" fill="#ffffff" text-anchor="middle">香爐</text>
+          <!-- 煙霧線條 (拉長加大) -->
+          <path d="M235,120 Q225,100 240,80 T235,60" fill="none" stroke="#b3aa94" stroke-width="2" stroke-dasharray="3,3" />
+          <path d="M265,120 Q275,100 260,80 T265,60" fill="none" stroke="#b3aa94" stroke-width="2" stroke-dasharray="3,3" />
 
-                <!-- 第 1 層：供品區域 (大幅加大、框線加粗) -->
-                <rect x="120" y="280" width="260" height="110" fill="#faf5e6" stroke="#a69b7c" stroke-width="3"
-                    rx="8" />
-                <text x="250" y="325" font-family="sans-serif" font-size="26" font-weight="bold" fill="#b33600"
-                    text-anchor="middle">供品區域</text>
-                <text x="250" y="365" font-family="sans-serif" font-size="20" font-weight="bold" fill="#735d4c"
-                    text-anchor="middle">包裝正面朝神明 / 祖先</text>
+          <!-- 第 2 層：金紙 (寬度與字體放大) -->
+          <rect x="60" y="194" width="90" height="50" fill="#f2cb61" stroke="#cc9900" stroke-width="1.5" rx="5" />
+          <rect x="350" y="194" width="90" height="50" fill="#f2cb61" stroke="#cc9900" stroke-width="1.5" rx="5" />
+          <text x="105" y="228" font-family="sans-serif" font-size="26" font-weight="bold" fill="#3d2f23" text-anchor="middle">金紙</text>
+          <text x="395" y="228" font-family="sans-serif" font-size="26" font-weight="bold" fill="#3d2f23" text-anchor="middle">金紙</text>
 
-                <!-- 人類視角端 (字體放大加粗) -->
-                <text x="250" y="470" font-family="sans-serif" font-size="22" font-weight="bold" fill="#3d2f23"
-                    text-anchor="middle">⬇ 陽世子孫（您身體這一側）</text>
-            </svg>
-        </div>
+          <!-- 第 1 層：供品區域 (大幅加大、框線加粗) -->
+          <rect x="120" y="280" width="260" height="110" fill="#faf5e6" stroke="#a69b7c" stroke-width="3" rx="8" />
+          <text x="250" y="325" font-family="sans-serif" font-size="26" font-weight="bold" fill="#b33600" text-anchor="middle">供品區域</text>
+          <text x="250" y="365" font-family="sans-serif" font-size="20" font-weight="bold" fill="#735d4c" text-anchor="middle">包裝正面朝神明 / 祖先</text>
 
-        <div class="step-box">
-            <ul>
-                <li><strong>第 1 層（最靠近您身體）擺放供品：</strong>餅乾、水果、熟食。<span class="highlight">商品包裝正面（有商品名、漂亮圖案的那一面）要面朝神明 /
-                        祖先那側</span>。</li>
-                <li><strong>第 2 層（中間區域）擺放金紙：</strong>疊好置於供品與香爐之間，或是擺在供品兩側空位。</li>
-                <li><strong>第 3 層（最靠近神明 / 牆壁）擺放香爐：</strong><span class="highlight">香爐是神明與祖先走出來的「大門」，保持在最內側，請勿移動</span>。
-                </li>
-            </ul>
-        </div>
-        <!-- 三、 供品類型與數量指南 -->
-        <h2 id="section3">三、 適合的供品類型與數量指南</h2>
-        <p>神明與祖先在供品的選擇與數量上，傳統民俗有不同的習慣：</p>
+          <!-- 人類視角端 (字體放大加粗) -->
+          <text x="250" y="470" font-family="sans-serif" font-size="22" font-weight="bold" fill="#3d2f23" text-anchor="middle">⬇ 陽世子孫（您身體這一側）</text>
+        </svg>
+      </div>
 
-        <h3>1. 祭拜神明（地藏王菩薩）</h3>
+      <div class="step-box">
         <ul>
-            <li><strong>類型：</strong>以全素、清淨為主。全素餅乾、素果、鮮奶、全素零食或飲料。</li>
-            <li><strong>水果選擇：</strong>蘋果（平平安安）、橘子（大吉大利）、柳丁。</li>
-            <li><strong>數量：</strong>水果數量須為 <span class="highlight">單數</span>（古人視單數 1, 3, 5 為陽數，代表祭神）。例如：1 罐餅乾、3 顆蘋果。
-            </li>
+          <li><strong>第 1 層（最靠近您身體）擺放供品：</strong>餅乾、水果、熟食。<span class="highlight">商品包裝正面（有商品名、漂亮圖案的那一面）要面朝神明 / 祖先那側</span>。</li>
+          <li><strong>第 2 層（中間區域）擺放金紙：</strong>疊好置於供品與香爐之間，或是擺在供品兩側空位。</li>
+          <li><strong>第 3 層（最靠近神明 / 牆壁）擺放香爐：</strong><span class="highlight">香爐是神明與祖先走出來的「大門」，保持在最內側，請勿移動</span>。</li>
         </ul>
+      </div>
+      <!-- 三、 供品類型與數量指南 -->
+      <h2 id="section3">三、 適合的供品類型與數量指南</h2>
+      <p>神明與祖先在供品的選擇與數量上，傳統民俗有不同的習慣：</p>
 
-        <h3>2. 祭拜祖先</h3>
+      <h3>1. 祭拜神明（地藏王菩薩）</h3>
+      <ul>
+        <li><strong>類型：</strong>以全素、清淨為主。全素餅乾、素果、鮮奶、全素零食或飲料。</li>
+        <li><strong>水果選擇：</strong>蘋果（平平安安）、橘子（大吉大利）、柳丁。</li>
+        <li><strong>數量：</strong>水果數量須為 <span class="highlight">單數</span>（古人視單數 1, 3, 5 為陽數，代表祭神）。例如：1 罐餅乾、3 顆蘋果。</li>
+      </ul>
+
+      <h3>2. 祭拜祖先</h3>
+      <ul>
+        <li><strong>類型：</strong>乾貨餅乾、飲料，或是先人生前愛吃的熟食飯菜、點心、茶水。</li>
+        <li><strong>水果選擇：</strong>與神明相同，皆以 <span class="highlight">圓形水果</span> 為佳。</li>
+        <li><strong>數量：</strong>供品總品項與水果數量同樣以 <span class="highlight">單數</span> 為主。若有準備熟食，通常準備 6 碗、8 碗或 12 碗（熟食碗數在民俗上視為成雙成對的完整宴席，通常用雙數）。</li>
+        <li>
+          <strong>🚫 絕對不能拜的（神明、祖先皆通用）：</strong>
+          <ul>
+            <li>鳳梨（台語旺來，在靈骨塔「旺」代表往生者多，大忌）。</li>
+            <li>香蕉、李子、梨子（台語諧音「招、你、來」，有招來鬼魂、邀請一起走的意涵）。</li>
+            <li>釋迦（外型像釋迦牟尼佛的頭，對神明不敬）。</li>
+            <li>多籽水果（如芭樂、番茄，民俗認為種子不易消化，拜了不潔）。</li>
+          </ul>
+        </li>
+      </ul>
+
+      <!-- 四、 祭拜流程與口訣 -->
+      <h2 id="section4">四、 祭拜流程與標準對話口訣</h2>
+      <p>現代納骨塔不需特地開櫃門。請先在大廳桌子安放好供品與金紙，並依順序點香祭拜：</p>
+
+      <h3>1. 拜地藏王菩薩（感謝菩薩照顧祖先）</h3>
+      <div class="quote">「地藏王菩薩在上，弟子 / 信女【您的名字】，今天來到這裡，準備了供品來祭拜安奉在此的祖先【先人姓名】，祂的塔位是【幾樓幾排幾號】。祈求地藏王菩薩大慈大悲，護佑【先人姓名】在此修行清靜，並保佑陽世子孫平安順遂。」</div>
+
+      <h3>2. 拜祖先（生辰用農曆最好）</h3>
+      <div class="quote">「【稱謂，例如：阿公】，我是【您的名字】。今天準備了您愛吃的東西和金紙來到大廳看您。您的生辰是【報農曆生日，例如：農曆庚子年五月初五生】、塔位在【幾樓幾號】。請您順著香煙來到大廳，享用供品。」</div>
+
+      <!-- 五、 擲筊步驟 -->
+      <h2 id="section5">五、 現場擲筊確認二步驟</h2>
+      <p>※ 拿起筊杯後，請以自己的視角<strong>「由右到左」順時針在香爐上繞三圈</strong>過爐淨化，再行擲筊。</p>
+
+      <h3>🛑 步驟一：確認祖先到了沒（點香後等待 10~15 分鐘）</h3>
+      <p>此時香約燒到剩 2/3。拿起筊杯問：</p>
+      <div class="quote">「【先人稱謂】，我是【您的名字】。請問您有沒有順著香煙來到大廳，開始享用我準備的供品了？如果已經到了、正在吃，請賜一個聖筊（一正一反）。」</div>
+      <ul>
+        <li><strong>聖筊（一正一反）：</strong>代表已入座享用，這時可以 <span class="highlight">抽空前往個別櫃位區看祂</span>。</li>
+        <li><strong>笑筊（兩平）或陰筊（兩凸）：</strong>還沒到，請在心中再喊一次名字與櫃位，等 5 分鐘後再重新擲一次。</li>
+      </ul>
+
+      <h3>🛑 步驟二：確認吃飽了沒（點香後約 25~30 分鐘）</h3>
+      <p>此時香燒到接近 1/4。拿起筊杯問：</p>
+      <div class="quote">「【先人稱謂】，今天準備的供品您都有吃飽、滿意嗎？如果吃飽了，可以準備去燒金紙、收供品了，請賜一個聖筊。」</div>
+      <ul>
+        <li><strong>聖筊（一正一反）：</strong>祖先同意了，可以開始收拾供品，並把金紙送去專用金爐焚燒。</li>
+        <li><strong>非聖筊：</strong>還想慢用，接著請對祂說「那我再等您 5~10 分鐘喔」，時間到回來再問一次即可。</li>
+      </ul>
+
+      <!-- 六、 櫃位探望與 -->
+      <h2 id="section6">六、 櫃位探望與回程除穢禁忌</h2>
+
+      <h3>💡 為什麼要等祂去大廳吃飯，才去櫃位探望？（民俗邏輯）</h3>
+      <p>在民間習俗中，正確的順序是<strong>「先在大廳點香請祂，等祂出來吃，您再利用空檔去櫃前探望」</strong>，這背後有兩個非常貼切的民俗邏輯：</p>
+      <ul>
+        <li><strong>大廳的香爐才是「通訊台」：</strong> 因為先人的個別塔位（櫃位）裡面沒有香爐，也不能點香。沒有點香，就沒有建立溝通的橋樑（訊號）。所以必須先在大廳香爐點香報名字，這個「通知」才會傳達給祖先，祂才會順著香煙走到大廳。</li>
+        <li>
+          <strong>大廳是「餐廳」，櫃位是「臥室」：</strong>
+          大廳才是擺放豐盛供品的宴席場所。正確的流程是：您先在大廳點香「呼叫」祖先，並把菜擺好（等於在餐廳幫祂點好菜、請祂入座）。祖先來到大廳享用時，您再利用這段時間走去祂的櫃位前（臥室）巡視、打招呼、跟祂說說話。
+        </li>
+      </ul>
+
+      <!-- 🌟 新整合內容：解答家人關於「櫃位是否空了」的疑惑 🌟 -->
+      <p class="highlight" style="margin-top: 20px">❓ 既然祂去大廳吃飯了，小房間（櫃位）不就空了嗎？為什麼還要過去看呢？</p>
+      <p>其實，這可以用無形界的<strong>「靈魂特性」</strong>和<strong>「探望的本質」</strong>來解釋：</p>
+      <ul>
+        <li>
+          <strong>1. 祖先具有「分靈」的能力（神識化現）：</strong>
+          在民俗信仰中，靈魂不像我們肉體一樣受限於同一個空間。祖先的「神識」可以同時存在。祂雖然有一部分的靈順著香煙去大廳「享用供品」，但祂的安息之所（骨灰和照片所在處）依然留有祂的氣場與靈體。所以您去櫃位前，祂一樣能「感應」到您來看祂了。
+        </li>
+        <li>
+          <strong>2. 就像去長輩家，一個人在客廳、一個人看房間：</strong>
+          這就像您去拜訪長輩：在大廳時，您的心意（香和供品）在客廳款待長輩，長輩在那裡開心地吃東西；當您去櫃位（小房間）時，您走去長輩的臥室（安息處），幫祂巡視一下居住環境好不好、有沒有乾淨、有沒有損壞。這是一種「陽世子孫對先人居住環境的關心」。
+        </li>
+        <li>
+          <strong>3. 這是一個「錯開」的貼心動線：</strong>
+          如果先去小房間請祂，大廳的供桌上還空空如也，長輩走出來反而沒東西吃。因此，完美的流程才會是：在大廳「點好菜、請祂入座」。祂開始享用時，您走去祂的櫃位「巡視祂的家、在心中跟祂說心裡話」。所以不用擔心小房間會「沒人」，您去櫃位前合掌跟祂說話，正在大廳吃飯的祖先一樣通通都聽得到喔！
+        </li>
+      </ul>
+
+      <h3>📌 前往櫃位區的注意動作</h3>
+      <div class="step-box">
+        <p><strong>第一步：先到大廳拜完神明與祖先</strong></p>
         <ul>
-            <li><strong>類型：</strong>乾貨餅乾、飲料，或是先人生前愛吃的熟食飯菜、點心、茶水。</li>
-            <li><strong>水果選擇：</strong>與神明相同，皆以 <span class="highlight">圓形水果</span> 為佳。</li>
-            <li><strong>數量：</strong>供品總品項與水果數量同樣以 <span class="highlight">單數</span> 為主。若有準備熟食，通常準備 6 碗、8 碗或 12
-                碗（熟食碗數在民俗上視為成雙成對的完整宴席，通常用雙數）。</li>
-            <li>
-                <strong>🚫 絕對不能拜的（神明、祖先皆通用）：</strong>
-                <ul>
-                    <li>鳳梨（台語旺來，在靈骨塔「旺」代表往生者多，大忌）。</li>
-                    <li>香蕉、李子、梨子（台語諧音「招、你、來」，有招來鬼魂、邀請一起走的意涵）。</li>
-                    <li>釋迦（外型像釋迦牟尼佛的頭，對神明不敬）。</li>
-                    <li>多籽水果（如芭樂、番茄，民俗認為種子不易消化，拜了不潔）。</li>
-                </ul>
-            </li>
+          <li><strong>關鍵動作：</strong> 一定要先在大廳完成點香、祭拜的儀式，等到香燒過半、祖先正在享用供品時，您再利用這個空檔走去祂的櫃位前探望。</li>
+          <li><strong>小原理：</strong> 先在大廳向守護神地藏王菩薩請安並得到允許，才走進塔位內部，在民俗上比較有禮貌且能得到庇護。</li>
         </ul>
+      </div>
 
-        <!-- 四、 祭拜流程與口訣 -->
-        <h2 id="section4">四、 祭拜流程與標準對話口訣</h2>
-        <p>現代納骨塔不需特地開櫃門。請先在大廳桌子安放好供品與金紙，並依順序點香祭拜：</p>
-
-        <h3>1. 拜地藏王菩薩（感謝菩薩照顧祖先）</h3>
-        <div class="quote">「地藏王菩薩在上，弟子 /
-            信女【您的名字】，今天來到這裡，準備了供品來祭拜安奉在此的祖先【先人姓名】，祂的塔位是【幾樓幾排幾號】。祈求地藏王菩薩大慈大悲，護佑【先人姓名】在此修行清靜，並保佑陽世子孫平安順遂。」</div>
-
-        <h3>2. 拜祖先（生辰用農曆最好）</h3>
-        <div class="quote">
-            「【稱謂，例如：阿公】，我是【您的名字】。今天準備了您愛吃的東西和金紙來到大廳看您。您的生辰是【報農曆生日，例如：農曆庚子年五月初五生】、塔位在【幾樓幾號】。請您順著香煙來到大廳，享用供品。」</div>
-
-        <!-- 五、 擲筊步驟 -->
-        <h2 id="section5">五、 現場擲筊確認二步驟</h2>
-        <p>※ 拿起筊杯後，請以自己的視角<strong>「由右到左」順時針在香爐上繞三圈</strong>過爐淨化，再行擲筊。</p>
-
-        <h3>🛑 步驟一：確認祖先到了沒（點香後等待 10~15 分鐘）</h3>
-        <p>此時香約燒到剩 2/3。拿起筊杯問：</p>
-        <div class="quote">「【先人稱謂】，我是【您的名字】。請問您有沒有順著香煙來到大廳，開始享用我準備的供品了？如果已經到了、正在吃，請賜一個聖筊（一正一反）。」</div>
+      <div class="step-box">
+        <p><strong>第二步：到了櫃位前，先輕敲櫃門三下（或合掌請安）</strong></p>
         <ul>
-            <li><strong>聖筊（一正一反）：</strong>代表已入座享用，這時可以 <span class="highlight">抽空前往個別櫃位區看祂</span>。</li>
-            <li><strong>笑筊（兩平）或陰筊（兩凸）：</strong>還沒到，請在心中再喊一次名字與櫃位，等 5 分鐘後再重新擲一次。</li>
+          <li><strong>關鍵動作：</strong> 找到先人的塔位面板後，請先在心中默念先人的稱謂與名字，接著用手指輕輕敲擊櫃門三下，或直接雙手合掌鞠躬。</li>
+          <li><strong>小原理：</strong> 這就像是去別人家拜訪時要「敲門」一樣，是通知先人您來看祂了，給予無形界一份尊重。</li>
         </ul>
+      </div>
 
-        <h3>🛑 步驟二：確認吃飽了沒（點香後約 25~30 分鐘）</h3>
-        <p>此時香燒到接近 1/4。拿起筊杯問：</p>
-        <div class="quote">「【先人稱謂】，今天準備的供品您都有吃飽、滿意嗎？如果吃飽了，可以準備去燒金紙、收供品了，請賜一個聖筊。」</div>
+      <div class="step-box">
+        <p><strong>第三步：以「不開櫃門」為原則，隔著面板說話</strong></p>
         <ul>
-            <li><strong>聖筊（一正一反）：</strong>祖先同意了，可以開始收拾供品，並把金紙送去專用金爐焚燒。</li>
-            <li><strong>非聖筊：</strong>還想慢用，接著請對祂說「那我再等您 5~10 分鐘喔」，時間到回來再問一次即可。</li>
+          <li><strong>關鍵動作：</strong> 現代靈骨塔基於安全、結構與防潮，一般不建議也通常不能隨意打開櫃門。您只需隔著玻璃或面板，看著先人的照片或名牌，在心中或小聲地跟祂分享近況、請祂保佑家人即可。</li>
+          <li><strong>小原理：</strong> 隨意開櫃容易驚動到在裡面安息的靈體，且容易讓環境中的濕氣影響骨灰罈。隔著面板，先人因為神識化現，不論在大廳還是在櫃位，都能同步完全感受到您的心意。</li>
         </ul>
+      </div>
 
-        <!-- 六、 櫃位探望與 -->
-        <h2 id="section6">六、 櫃位探望與回程除穢禁忌</h2>
-        <h3>💡 為什麼要等祂去大廳吃飯，才去櫃位探望？（民俗邏輯）</h3>
-        <p>在民間習俗中，正確的順序是<strong>「先在大廳點香請祂，等祂出來吃，您再利用空檔去櫃前探望」</strong>，這背後有兩個非常貼切的民俗邏輯：</p>
-        <ul>
-            <li><strong>大廳的香爐才是「通訊台」：</strong>
-                因為先人的個別塔位（櫃位）裡面沒有香爐，也不能點香。沒有點香，就沒有建立溝通的橋樑（訊號）。所以必須先在大廳香爐點香報名字，這個「通知」才會傳達給祖先，祂才會順著香煙走到大廳。</li>
-            <li>
-                <strong>大廳是「餐廳」，櫃位是「臥室」：</strong>
-                大廳才是擺放豐盛供品的宴席場所。正確的流程是：您先在大廳點香「呼叫」祖先，並把菜擺好（等於在餐廳幫祂點好菜、請祂入座）。祖先來到大廳享用時，您再利用這段時間走去祂的櫃位前（臥室）巡視、打招呼、跟祂說說話。
-            </li>
-        </ul>
+      <h2 id="section7">七、 回程注意事項</h2>
 
-        <h3>📌 前往櫃位區的注意動作</h3>
-        <div class="step-box">
-            <p><strong>第一步：先到大廳拜完神明與祖先</strong></p>
-            <ul>
-                <li><strong>關鍵動作：</strong> 一定要先在大廳完成點香、祭拜的儀式，等到香燒過半、祖先正在享用供品時，您再利用這個空檔走去祂的櫃位前探望。</li>
-                <li><strong>小原理：</strong> 先在大廳向守護神地藏王菩薩請安並得到允許，才走進塔位內部，在民俗上比較有禮貌且能得到庇護。</li>
-            </ul>
-        </div>
+      <h3>⚠️ 收拾供品與回程兩大禁忌</h3>
+      <ul>
+        <li><strong>收拾供品時：</strong>務必得到聖筊同意才收。拜完的供品、水果、飲料 <span class="highlight">必須全部帶回家分食（吃平安）</span>，不能遺留現場（除非是廟方或塔位有特別規定的特定捐贈、集中處理物）。也不能在園區內直接食用，以免吸引其他孤魂野鬼。</li>
+        <li><strong>離開園區時：</strong><span class="highlight">絕對不可說「再見」、「拜拜」</span>，亦不可大聲呼喊先人或同行親友的名字（避免有無形眾生誤會跟隨）。</li>
+        <li><strong>進家門之前：</strong>離開後先去便利商店或人多的熱鬧地方晃晃、沖散冷磁場。到家門外，雙手在身上、大腿輕拍，默念「不好的留在外面，好運跟進來」，進門立刻洗手、洗臉、換洗衣服。</li>
+      </ul>
 
-        <div class="step-box">
-            <p><strong>第二步：到了櫃位前，先輕敲櫃門三下（或合掌請安）</strong></p>
-            <ul>
-                <li><strong>關鍵動作：</strong> 找到先人的塔位面板後，請先在心中默念先人的稱謂與名字，接著用手指輕輕敲擊櫃門三下，或直接雙手合掌鞠躬。</li>
-                <li><strong>小原理：</strong> 這就像是去別人家拜訪時要「敲門」一樣，是通知先人您來看祂了，給予無形界一份尊重。</li>
-            </ul>
-        </div>
-
-        <div class="step-box">
-            <p><strong>第三步：以「不開櫃門」為原則，隔著面板說話</strong></p>
-            <ul>
-                <li><strong>關鍵動作：</strong>
-                    現代靈骨塔基於安全、結構與防潮，一般不建議也通常不能隨意打開櫃門。您只需隔著玻璃或面板，看著先人的照片或名牌，在心中或小聲地跟祂分享近況、請祂保佑家人即可。</li>
-                <li><strong>小原理：</strong> 隨意開櫃容易驚動到在裡面安息的靈體，且容易讓環境中的濕氣影響骨灰罈。隔著面板，先人因為神識化現，不論在大廳還是在櫃位，都能同步完全感受到您的心意。</li>
-            </ul>
-        </div>
-
-        <h2 id="section7">七、 回程注意事項</h2>
-
-        <h3>⚠️ 收拾供品與回程兩大禁忌</h3>
-        <ul>
-            <li><strong>收拾供品時：</strong>務必得到聖筊同意才收。拜完的供品、水果、飲料 <span
-                    class="highlight">必須全部帶回家分食（吃平安）</span>，不能遺留現場（除非是廟方或塔位有特別規定的特定捐贈、集中處理物）。也不能在園區內直接食用，以免吸引其他孤魂野鬼。
-            </li>
-            <li><strong>離開園區時：</strong><span class="highlight">絕對不可說「再見」、「拜拜」</span>，亦不可大聲呼喊先人或同行親友的名字（避免有無形眾生誤會跟隨）。
-            </li>
-            <li><strong>進家門之前：</strong>離開後先去便利商店或人多的熱鬧地方晃晃、沖散冷磁場。到家門外，雙手在身上、大腿輕拍，默念「不好的留在外面，好運跟進來」，進門立刻洗手、洗臉、換洗衣服。</li>
-        </ul>
-
-        <div class="footer">
-            <p>一切平安圓滿，子孫代代福氣綿延</p>
-        </div>
+      <div class="footer">
+        <p>一切平安圓滿，子孫代代福氣綿延</p>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
